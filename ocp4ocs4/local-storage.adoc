@@ -9,7 +9,7 @@
 // Activate experimental attribute for Keyboard Shortcut keys
 :experimental:
 
-== Installing Red Hat OpenShift Container Storage Operator using the Operator Hub
+== Installing OpenShift Container Storage Operator using Operator Hub
 
 Start with creating the `openshift-storage` namespace.
 
