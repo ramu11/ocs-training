@@ -766,7 +766,7 @@ storagecluster.ocs.openshift.io/ocs-storagecluster created
 
 Reference <<Validating the successful OCS Storage Cluster creation on AWS>> for how to validate your *StorageCluster* deployment.
 
-== Scaling up storage by adding capacity to your OpenShift Container Storage nodes
+== Scaling up storage by adding capacity to OpenShift Container Storage
 
 Use this procedure to add storage capacity (additional storage devices) to your configured Red Hat OpenShift Container Storage worker nodes.
 
