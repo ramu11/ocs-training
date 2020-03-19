@@ -828,12 +828,10 @@ oc get pv | grep localblock
 local-pv-1d63db9e   1769Gi     RWO            Delete           Available           localblock              33s
 local-pv-1eb9da0a   1769Gi     RWO            Delete           Available           localblock              25s
 local-pv-31021a83   1769Gi     RWO            Delete           Available           localblock              48s
-local-pv-40bd1474                          1769Gi     RWO            Delete           Bound       openshift-storage/ocs-deviceset-0-0-dq89h   localblock                             66m
-local-pv-66631f85                          1769Gi     RWO            Delete           Bound       openshift-storage/ocs-deviceset-1-0-wnbrp   localblock                             66m
-local-pv-c56e9c                            1769Gi     RWO            Delete           Bound       openshift-storage/ocs-deviceset-2-0-xst6j   localblock                             66m
+...
 ----
 
-Now there are 3 more `Available` *PVs* to add to our *StorageCluster*. To do the expansion the only modification to the StorageCluster CR is to modify the `count` fo *storageDeviceSets* from `1` to `2`.
+Now there are 3 more `Available` *PVs* to add to our *StorageCluster*. To do the expansion the only modification to the StorageCluster CR is to modify the `count` for *storageDeviceSets* from `1` to `2`.
 
 [source,yaml]
 .StorageCluster CR cluster-service-AWS-expand.yaml using `gp2` and `localblock` storageclasses:
@@ -945,7 +943,7 @@ ceph osd tree
 .Example output:
 [source]
 ----
-# ceph status
+sh-4.2# ceph status
   cluster:
     id:     fb084de5-e7c8-47f4-9c45-e57953fc44fd
     health: HEALTH_OK
